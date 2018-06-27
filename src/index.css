@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.accordion{
+    width:300px;
+}
+
+.accordion li{
+    list-style-type: none;
+    text-align: left;
+    border:1px solid grey;
+}
+
+.accordion li:not(:first-child){
+    border-top:none;
+}
+
+.accordion .title{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:10px;
+    cursor: pointer;
+}
+
+.accordion .content{
+    padding:10px;
+    cursor:pointer;
+}
+
+.hidden{
+    display:none;
+}
