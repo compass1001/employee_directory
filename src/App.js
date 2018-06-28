@@ -31,6 +31,8 @@ class EmployeeList extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    // expandedIndex is used to track which employee's name has been clicked in the list.
+    // expandedIndex = -1 means everything is collapsed.
     handleClick(index){
         if(index === this.state.expandedIndex){
             this.setState({
