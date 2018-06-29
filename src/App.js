@@ -56,7 +56,7 @@ class EmployeeList extends React.Component {
             );
         });
         return(
-            <ul className="accordion">
+            <ul className="employees">
                 {employeeList}
             </ul>
         )
@@ -80,9 +80,9 @@ class Employee extends React.Component {
 
     render(){
         return(
-            <li className="item">
-                <div onClick={this.handleNameClick} className="title">{this.props.employee.name}</div>
-                <div onClick={this.handleContentClick} className={'content ' + this.props.hidden}>{this.props.employee.bio}</div>
+            <li className="employee">
+                <div onClick={this.handleNameClick} className="name">{this.props.employee.name}</div>
+                <div onClick={this.handleContentClick} className={'bio ' + this.props.hidden}>{this.props.employee.bio}</div>
             </li>
         )
     }
